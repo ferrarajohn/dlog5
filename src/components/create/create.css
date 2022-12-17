@@ -1,0 +1,86 @@
+.create-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Dosis", sans-serif;
+}
+
+.create-input-description {
+  width: 30rem;
+  padding: 0.5rem;
+  height: 8rem;
+  font-family: "Dosis", sans-serif;
+}
+
+.create-input-number {
+  width: 13rem;
+  padding: 0.75rem;
+}
+
+.create-input-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #d74945;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-top: 1rem;
+}
+
+.create-input-btn:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.create-inner-wrap {
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 100%;
+  min-height: 100px;
+  align-items: center;
+  padding: 1rem;
+  border-radius: var(---brad);
+  background-color: var(---primary-col);
+  box-shadow: -20px 20px 60px #a1a1a1, 20px -20px 60px #ffffff;
+}
+
+.create-nft-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 21.5rem;
+  border-radius: 10px;
+  background-color: var(---primary-col);
+  box-shadow: -20px 20px 60px #a1a1a1, 20px -20px 60px #ffffff;
+}
+
+.create-input-file {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .create-input,
+  .create-input-description,
+  .create-input-number {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .create-nft-wrap {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .file-upload {
+    width: 50%;
+    height: 10rem;
+  }
+}
